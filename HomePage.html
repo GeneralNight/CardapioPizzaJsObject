@@ -1,0 +1,81 @@
+<html>
+
+	<head>
+		
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="CSS/HomePage.css"/>
+		<script src="https://kit.fontawesome.com/3b5310efad.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<div id="Logo">
+				<img src="Images/Logo.png" id="Imglogo"/>;
+		</div>
+		
+		<header>
+			
+			<p>Faça seu pedido aqui!</p>
+			
+			<i id="InfoIcon"class="fas fa-info-circle" onmouseenter="MostraInfo(0);" onmouseleave="MostraInfo(1);"></i>
+			<div id="Info">Aqui você pode realizar o seu pedido de maneira online e com mais calma. É também uma forma de vizualizar o cardápio de outra maneira.</br></br>
+				Para começar, basta apenas navegar entre as seções, selecionar os produtos e adicioná-los a comanda. O pagamento é realizado na hora da retirada ou na hora da entrega. </div>
+			
+		</header>
+		
+		<div id="Promocao" class="Produtos">
+			
+			<div id="Img">
+				<img id="ImgPromocao"/>
+			</div>
+			
+			<div id="txtPromocao">
+				<p id="txtTitle1" class="txtTitle">Promoção do dia<p>
+				<p id="txtTitle2" class="txtTitle"></p>
+				<p id="txtTitle3" class="txtTitle"></p>
+				<p id="txtTitle3" class="txtTitle">*Acompanha um guaraná</p>
+				
+			</div>
+			
+		</div>
+		
+		
+		<div id="Pizzas" class="Produtos"></div>
+		
+		<div id="Bebidas" class="Produtos"></div>
+		
+		<div id="Comanda" class="Comanda">
+			
+			<div id="InfoComanda">
+				
+				<p id="txtComanda1" class="txtComanda">Comanda</p>
+				<button id="btnRemoveTudo" class="btnComanda" onclick="RemoveTudoComanda();">Remover tudo</button>
+				<i class="fas fa-arrow-circle-up" id="IconEscondeComanda" onclick="EscondeComanda();"></i>
+				<button id="btnFinalizar" class="btnComanda" onclick="FinalizaPedido();">Finalizar pedido</button>
+				<p id="txtComanda2" class="txtComanda">Total: R$ 00.00</p>
+				
+			</div>
+			
+			<div id="ItensComanda"></div>
+			
+		</div>
+		
+		<div id="CobreInfo" onclick="FechaInfoProduto();"></div>
+		
+		<div id="InfoProduto">
+			<img src="Images/FundoInfo.png" id="ImgFundoInfoProduto"/>
+			<img src="Images/Pizza1.jpg" id="ImgProduto"/>
+			<p id="SaborPizzaInfo" class="txtInfoPizza">Calabressa</p>
+			<p id="PrecoPizzaInfo" class="txtInfoPizza">Preço: R$ 24.50</p>
+			<p id="IngredientesPizzaInfo" class="txtInfoPizza">Ingredientes: Calabresa, Cebola, Tomate, Muçarela, Azeitona.</p>
+		</div>
+		
+		
+		
+		
+	</body>
+	<script type="text/JavaScript" src="JavaScript/HomePage.js"></script>
+	
+	
+</html>
